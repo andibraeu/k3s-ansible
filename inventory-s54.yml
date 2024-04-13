@@ -50,6 +50,8 @@ k3s_cluster:
         - "oidc-client-id=kube-s54-apiserver"
         - "oidc-username-claim=email"
         - "oidc-groups-claim=groups"
+      cluster-cidr: 10.42.0.0/16,2001:cafe:42::/56
+      service-cidr: 10.43.0.0/16,2001:cafe:43::/112
     # registries_config_yaml:  |
       # Containerd can be configured to connect to private registries and use them to pull images as needed by the kubelet.
       # YAML here will be placed as the content of /etc/rancher/k3s/registries.yaml
