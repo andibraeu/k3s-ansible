@@ -45,6 +45,7 @@ k3s_cluster:
       disable:
         - traefik
         - servicelb
+        - local-storage
       kube-apiserver-arg:
         - "oidc-issuer-url=https://auth.cloud.home.andi95.de:8443/application/o/kube-s54-apiserver/"
         - "oidc-client-id=kube-s54-apiserver"
