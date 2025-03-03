@@ -13,7 +13,7 @@ k3s_cluster:
   vars:
     ansible_port: 22
     ansible_user: andibraeu
-    k3s_version: v1.29.2+k3s1
+    k3s_version: v1.31.6+k3s1
     token: !vault |
           $ANSIBLE_VAULT;1.1;AES256
           63386665343530373637323561336164613634643763303038653762633838373362633161303765
